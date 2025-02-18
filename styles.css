@@ -221,7 +221,7 @@ footer {
     margin: 0 auto;
     padding: 2rem;
 }
-
+/* 
 .profile-image {
     position: relative;
     width: 250px;
@@ -229,7 +229,7 @@ footer {
     border-radius: 50%;
     overflow: hidden;
     animation: float 6s ease-in-out infinite;
-}
+} */
 
 .profile-image img {
     width: 100%;

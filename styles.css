@@ -19,7 +19,7 @@ body {
     height: 100vh;
     z-index: -1;
 }
-
+/* 
 nav {
     position: fixed;
     width: 100%;
@@ -44,8 +44,183 @@ nav a {
 
 nav a:hover {
     color: var(--secondary-color);
-}
+} */
+/* .navbar {
+    background-color: rgba(44, 62, 80, 0.9);Semi-transparent dark blue-gray 
+    color: #ecf0f1; Light gray 
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); Adds a blur effect to the background
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
 
+  /* Hamburger Menu Styling */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  /* General Styles for Navbar */
+.navbar {
+    background-color:rgba(8, 22, 43, 0.74);
+    padding: 2px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-links {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links:hover {
+    color: #ffffff;
+  }
+  
+  .nav-links::after {
+    content: attr(data-after);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ffffff;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links:hover::after {
+    width: 100%;
+  }
+  
+  /* Mobile Menu Styles */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #ffffff;
+      padding: 1rem;
+    }
+  
+    .nav-item {
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0;
+    }
+  
+    .nav-links {
+      font-size: 1.2rem;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  }
+  
+  /* Active state for the menu (when clicked) */
+  .nav-menu.active {
+    display: flex;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ecf0f1;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgba(8, 22, 43, 0.74);
+      position: absolute;
+      top: 70px;
+      left: 0;
+      padding: 20px 0;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .nav-item {
+      margin: 15px 0;
+      text-align: center;
+    }
+  
+    .nav-links::before {
+      display: none; /* Disable hover effect on mobile */
+    }
+  }
 header {
     text-align: center;
     padding: 8rem 2rem 4rem;
@@ -451,6 +626,13 @@ footer {
     background: linear-gradient(45deg, #00a2ff, #00ff88);
     -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-logo {
+    font-size: 2.5rem;
+    margin: 0;
+    background: linear-gradient(45deg, #00a2ff, #00ff88);
+
     -webkit-text-fill-color: transparent;
 }
 
